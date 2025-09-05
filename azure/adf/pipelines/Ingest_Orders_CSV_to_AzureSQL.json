@@ -1,0 +1,48 @@
+{
+  "name": "Ingest_Orders_CSV_to_AzureSQL",
+  "properties": {
+    "activities": [
+      {
+        "name": "Copy_Orders_CSV_to_Staging",
+        "type": "Copy",
+        "typeProperties": {
+          "source": {
+            "type": "DelimitedTextSource",
+            "treatEmptyAsNull": true
+          },
+          "sink": {
+            "type": "SqlSink",
+            "writeBatchSize": 10000,
+            "writeBatchTimeout": "00:30:00"
+          }
+        },
+        "inputs": [
+          {
+            "referenceName": "ds_Orders_CSV",
+            "type": "DatasetReference"
+          }
+        ],
+        "outputs": [
+          {
+            "referenceName": "ds_Staging_Orders",
+            "type": "DatasetReference"
+          }
+        ]
+      }
+    ],
+    "parameters": {
+      "watermark_column": {
+        "type": "String",
+        "defaultValue": "order_date"
+      },
+      "watermark_value": {
+        "type": "String",
+        "defaultValue": "2024-01-01"
+      }
+    },
+    "annotations": [
+      "Demo pipeline for interview"
+    ]
+  },
+  "type": "Microsoft.DataFactory/factories/pipelines"
+}

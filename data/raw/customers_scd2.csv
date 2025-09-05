@@ -1,0 +1,6 @@
+customer_id,customer_name,city,segment,valid_from,valid_to,is_current
+1001,Ada Lovelace,Stockholm,Consumer,2024-01-01,2024-06-30,0
+1001,Ada Lovelace,Stockholm,Enterprise,2024-07-01,9999-12-31,1
+1002,Alan Turing,Gothenburg,Consumer,2024-01-01,9999-12-31,1
+1003,Grace Hopper,Malmö,Consumer,2024-01-01,9999-12-31,1
+1004,Linus Torvalds,Uppsala,Enterprise,2024-01-01,9999-12-31,1

@@ -1,0 +1,9 @@
+{
+  "name": "ls_BlobStorage",
+  "properties": {
+    "type": "AzureBlobStorage",
+    "typeProperties": {
+      "connectionString": "UseKeyVaultOrMIHere"
+    }
+  }
+}

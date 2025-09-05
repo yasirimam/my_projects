@@ -1,0 +1,3 @@
+raw_data_dir: '../data/raw'
+warehouse_path: '../data/warehouse.sqlite'
+log_path: '../python_etl/logs/etl.log'

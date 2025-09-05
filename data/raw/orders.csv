@@ -1,0 +1,7 @@
+order_id,customer_id,order_date,amount,status
+50001,1001,2024-07-05,120.50,Completed
+50002,1002,2024-07-06,75.00,Completed
+50003,1003,2024-07-07,210.00,Refunded
+50004,1001,2024-07-08,330.25,Completed
+50005,1004,2024-07-09,150.00,Completed
+50006,1002,2024-07-10,99.99,Pending

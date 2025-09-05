@@ -1,0 +1,5 @@
+Total Revenue = SUM(fact_order_lines[extended_amount])
+Total Orders = DISTINCTCOUNT(fact_order_lines[order_id])
+Average Order Value = DIVIDE([Total Revenue], [Total Orders])
+Customers = DISTINCTCOUNT(fact_order_lines[customer_id])
+Orders Completed = CALCULATE([Total Orders], FILTER(ALL('stg_orders'), 'stg_orders'[status] = "Completed"))

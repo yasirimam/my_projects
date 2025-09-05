@@ -1,0 +1,14 @@
+{
+  "name": "ds_Staging_Orders",
+  "properties": {
+    "linkedServiceName": {
+      "referenceName": "ls_AzureSQL",
+      "type": "LinkedServiceReference"
+    },
+    "type": "SqlServerTable",
+    "typeProperties": {
+      "schema": "stg",
+      "table": "Orders"
+    }
+  }
+}

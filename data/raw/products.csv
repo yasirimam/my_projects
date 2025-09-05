@@ -1,0 +1,4 @@
+product_id,product_name,category,unit_price
+9001,Subscription Basic,Plan,99.00
+9002,Subscription Plus,Plan,149.00
+9003,Addon Analytics,Addon,49.00
